@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: RGB(171, 150, 111);
+
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+h1{
+    padding-left: 8px;
+}
+
+li{
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+#jogoBase{
+    border-right: 2px solid RGB(171, 150, 111);
+}
+
+#jogoBase, #SOTE{
+    display: inline-block;
+    width: 50%;
+
+    margin: 12px 0 12px 0;
+}
+
+#listaBase, #listaSOTE{
+    padding: 4px 0 4px 25px;
+}
+
+.conteiner{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+.informacoes{
+    position: fixed;
+    background-color: black;
+    border: 2px solid RGB(171, 150, 111);
+    border-radius: 4px;
+    padding: 4px;
+
+    display: none;
+}
