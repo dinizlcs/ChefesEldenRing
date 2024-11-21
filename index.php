@@ -16,14 +16,29 @@
         <div id="jogoBase">
             <h1>Chefes do jogo base</h1>
             <ol id="listaBase">
-                <li>
-                    Nome do Chefe
-                    <p class="informacoes">Descrição do Chefe (Acesso, Localização, Requisitos...)</p>
-                </li>
-                <li>
-                    Nome do Chefe
-                    <p class="informacoes">Descrição do Chefe (Acesso, Localização, Requisitos...)</p>
-                </li>
+                <?php
+                    require "Chefes.php";
+
+                    foreach ($chefesBase as $chefe => $informacoes){
+                        if($informacoes !== null){
+                            $informacoes = str_replace("\t", "&emsp;", $informacoes);
+                            $informacoes = str_replace("\n", "<br/>", $informacoes);
+
+                            echo <<<EOD
+                                <li>
+                                    $chefe
+                                    <p class="informacoes">$informacoes</p>
+                                </li>
+                            EOD;
+                        }else{
+                            echo <<<EOD
+                                <li>
+                                    $chefe
+                                </li>
+                            EOD;
+                        }
+                    }
+                ?>
             </ol>
         </div>
 
