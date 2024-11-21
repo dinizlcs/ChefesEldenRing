@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/listas.css">
 </head>
 <body>
     <div class="conteiner">
@@ -21,19 +22,18 @@
 
                     foreach ($chefesBase as $chefe => $informacoes){
                         if($informacoes !== null){
-                            $informacoes = str_replace("\t", "&emsp;", $informacoes);
                             $informacoes = str_replace("\n", "<br/>", $informacoes);
 
                             echo <<<EOD
                                 <li>
-                                    $chefe
+                                    <button class="btnConcluir"></button>$chefe
                                     <p class="informacoes">$informacoes</p>
                                 </li>
                             EOD;
                         }else{
                             echo <<<EOD
                                 <li>
-                                    $chefe
+                                    <button class="btnConcluir"></button>$chefe
                                 </li>
                             EOD;
                         }

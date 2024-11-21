@@ -1,0 +1,37 @@
+.informacoes{
+    position: fixed;
+    background-color: black;
+    border: 2px solid RGB(171, 150, 111);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 10pt;
+    display: none;
+}
+
+.btnConcluir{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 2px solid RGB(171, 150, 111);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.btnConcluir.concluido::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    width: 4px;
+    height: 12px;
+    border: solid RGB(231, 210, 171);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.derrotado{
+    text-decoration: line-through;
+    color: grey;
+}

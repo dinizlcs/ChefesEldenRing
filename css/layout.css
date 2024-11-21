@@ -30,10 +30,11 @@ li{
     width: 50%;
 
     margin: 12px 0 12px 0;
+    padding: 8px;
 }
 
 #listaBase, #listaSOTE{
-    padding: 4px 0 4px 25px;
+    padding: 4px 0 4px 30px;
 }
 
 .conteiner{
@@ -41,14 +42,4 @@ li{
     min-height: 100vh;
 
     display: flex;
-}
-
-.informacoes{
-    position: fixed;
-    background-color: black;
-    border: 2px solid RGB(171, 150, 111);
-    border-radius: 4px;
-    padding: 4px;
-
-    display: none;
 }
