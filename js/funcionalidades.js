@@ -1,5 +1,5 @@
-$('li').hover(function(){
-    $(this).find('.informacoes').toggle();
+$('.nomeChefe').hover(function(){
+    $(this).siblings('.informacoes').toggle();
 });
 
 $('.btnConcluir').click(function(){

@@ -21,22 +21,14 @@
                     require "Chefes.php";
 
                     foreach ($chefesBase as $chefe => $informacoes){
-                        if($informacoes !== null){
-                            $informacoes = str_replace("\n", "<br/>", $informacoes);
+                        if($informacoes === null) $informacoes = "Informações não encontradas.";
 
-                            echo <<<EOD
-                                <li>
-                                    <button class="btnConcluir"></button>$chefe
-                                    <p class="informacoes">$informacoes</p>
-                                </li>
-                            EOD;
-                        }else{
-                            echo <<<EOD
-                                <li>
-                                    <button class="btnConcluir"></button>$chefe
-                                </li>
-                            EOD;
-                        }
+                        echo <<<EOD
+                            <li>
+                                <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
+                                <p class="informacoes">$informacoes</p>
+                            </li>
+                        EOD;
                     }
                 ?>
             </ol>
@@ -45,19 +37,23 @@
         <div id="SOTE">
             <h1>Chefes da DLC (Shadow of the Erdtree)</h1>
             <ol id="listaSOTE">
-                <li>
-                    Nome do Chefe
-                    <p class="informacoes">Descrição do Chefe (Acesso, Localização, Requisitos...)</p>
-                </li>
-                <li>
-                    Nome do Chefe
-                    <p class="informacoes">Descrição do Chefe (Acesso, Localização, Requisitos...)</p>
-                </li>
+                <?php
+                    foreach($chefesSOTE as $chefe => $informacoes){
+                        if($informacoes === null) $informacoes = "Informações não encontradas.";
+
+                        echo <<<EOD
+                            <li>
+                                <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
+                                <p class="informacoes">$informacoes</p>
+                            </li>
+                        EOD;
+                    }
+                ?>
             </ol>
         </div>
     </div>
 
     <!-- JAVASCRIPT -->
-     <script src="js/teste.js"></script>
+     <script src="js/funcionalidades.js"></script>
 </body>
 </html>

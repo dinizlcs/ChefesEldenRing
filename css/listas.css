@@ -1,11 +1,13 @@
 .informacoes{
-    position: fixed;
+    position: absolute;
     background-color: black;
     border: 2px solid RGB(171, 150, 111);
     border-radius: 4px;
     padding: 4px;
-    font-size: 10pt;
+    margin: 2px 0 0 32px;
+    font-size: 12pt;
     display: none;
+    z-index: 1;
 }
 
 .btnConcluir{
