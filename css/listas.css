@@ -33,7 +33,7 @@
     transform: rotate(45deg);
 }
 
-.derrotado{
+.chefe-derrotado{
     text-decoration: line-through;
     color: grey;
 }
