@@ -15,12 +15,12 @@ function salvarEstadoChefe(){
 }
 
 function carregarEstadoChefe(){
-    const estados = JSON.parse(localStorage.getItem('estadosChefes')) || [];
+    const lstEstados = JSON.parse(localStorage.getItem('estadosChefes')) || [];
 
-    estados.forEach(estado => {
-        const item = $(`#listaBase li:contains(${estado.nome}), #listaSOTE li:contains(${estado.nome})`);
-        
-        if(estado.status === 1){
+    lstEstados.forEach(chefe => {
+        const item = $(`li[data-nome="${chefe.nome}"]`);
+
+        if(chefe.status === 1){
             item.addClass('chefe-derrotado');
             item.find('.btnConcluir').addClass('concluido');
         }

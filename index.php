@@ -24,7 +24,7 @@
                         if($informacoes === null) $informacoes = "Informações não encontradas.";
 
                         echo <<<EOD
-                            <li>
+                            <li data-nome="$chefe">
                                 <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
                                 <p class="informacoes">$informacoes</p>
                             </li>
@@ -42,7 +42,7 @@
                         if($informacoes === null) $informacoes = "Informações não encontradas.";
 
                         echo <<<EOD
-                            <li>
+                            <li data-nome="$chefe">
                                 <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
                                 <p class="informacoes">$informacoes</p>
                             </li>
