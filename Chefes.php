@@ -44,27 +44,32 @@
             &emsp;1- Seguir a quest da Tanith até o fim (invasões) e responder que quer conhecer o lorde dela.<br/>
             &emsp;2- Derrotar o Nobre da Pele Divina (acessado por uma parede ilusória em um dos quartos) e seguir até um corredor com três Homens-Serpente. Em uma das varandas para o
              lago de lava terá um portal que leva direto ao chefe.",
-        "Fortissax, o Dragão Lich" => "<strong>Requisito:</strong> Pegar a Marca Amaldiçoada da Morte na Torre Divina de Liurnia. É necessário avançar na quest da Ranni (Descrição do Astel) até entregar a
-         Lâmina de Matador de Dedos para conseguir o item Estátua Cariana Invertida.<br/>
-            &emsp;Acesso: Entregar a marca para a Fia após a luta contra os Campeões, nos Abismos da Raiz Profunda.",
+        "Fortissax, o Dragão Lich" => "<strong>Requisito:</strong> Pegar a Marca Amaldiçoada da Morte na Torre Divina de Liurnia. É necessário avançar na quest da Ranni (Descrição do
+             Astel) até entregar a Lâmina de Matador de Dedos para conseguir o item Estátua Cariana Invertida.<br/>
+            <strong>Acesso:</strong> Entregar a marca para a Fia após a luta contra os Campeões, nos Abismos da Raiz Profunda.",
         "Gigante de Fogo" => "<strong>Localização:</strong> Montanha dos Gigantes.",
         "Mohg, Lorde do Sangue" => "<strong>Requisito:</strong> Medalhão da Árvore Sacra. Uma outra opção pode ser seguir a quest do Varré.<br/>
-            Localização dos medalhões:<br/>
-            &emsp;Parte Direita: Vilarejo dos Albináuricos, Liurnia.<br/>
-            &emsp;Parte Esquerda: Castelo Sol, Montanha dos Gigantes.<br/>
-            <strong>Acesso:</strong> Usar o medalhão no Grande Elevador de Rold. O portal está a Noroeste (NW) das Ruínas de Yelough Anix.<br/><br/>
             Quest do Varré:<br/>
             &emsp;Ir até a Igreja da Rosa em Liurnia para iniciar a quest. Conversando com ele, escolha a primeira opção \"Eles não pareciam certos\" e depois invada 3 mundos ou
              derrote o invasor em Platô Altus e volte até o Varré. Conversando com ele, escolha novamente a primeira opção \"Unja-me\" após pegar o item Favor do Lorde do Sangue vá
              até Os Quatro Campanários. Subindo tudo haverá um baú, pegue a chave dentro dele e use no primeiro campanário a esquerda (seguindo o caminho para descer) e use o portal.
              Derrotando o chefe, vá até a igreja onde inicia o jogo e interaja com o corpo da donzela no chão.<br/>
-            Após isso volte até o Varré e converse com ele. Depois dele arrancar o seu dedo, converse novamente para ele te dar o item Medalha de Cavaleiro Sangue Puro. Usando este
-             você será teleportado para a entrada do Palácio de Mohgwyn.",
-        "Maliketh, A Lâmina Negra" => null,
-        "Placidusax, o Lorde Dragão" => null,
-        "Hoarah Loux, Guerreiro" => null,
-        "Malenia, a Lâmina de Miquella" => null,
-        "Radagon da Ordem Áurea/ Fera Prístina" => null
+            Após isso volte até o Varré e converse com ele. Depois dele arrancar o seu dedo, converse novamente para ele te dar o item Medalha de Cavaleiro Sangue Puro.<br/>
+            Localização dos medalhões:<br/>
+            &emsp;Parte Direita: Vilarejo dos Albináuricos, Liurnia (NPC disfarçado de pote. Após o primeiro \"perfumista\").<br/>
+            &emsp;Parte Esquerda: Castelo Sol, Montanha dos Gigantes (Derrotar o Comandante Niall).<br/>
+            <strong>Acesso:</strong> Usar o medalhão no Grande Elevador de Rold. O portal está a Noroeste (NW) das Ruínas de Yelough Anix.<br/>
+                Ou, seguindo a quest do Varré. Use a Medalha de Cavaleiro Sangue Puro, e você será teleportado para a entrada do Palácio de Mohgwyn.",
+        "Maliketh, A Lâmina Negra" => "<strong>Requisito:</strong> Derrotar o Gigante de Fogo.<br/>
+            <strong>Localização:</strong> Ruína de Farum Azula (Queimar a Térvore na graça da Forja dos Gigantes).",
+        "Placidusax, o Lorde Dragão" => "<strong>Acesso:</strong> A partir da graça \"Lateral da Grande Ponte\", volte e desça o elevador. Passe pelos inimigos na parte com água.
+             Saindo pela porta, siga reto em direção ao penhasco. Você verá uma \"plataforma\" abaixo. Desça completamente e deite no espaço onde não há ossos.",
+        "Hoarah Loux, Guerreiro" => "<strong>Requisito:</strong> Derrotar o Maliketh.<br/>
+            <strong>Localização:</strong> Leyndell, Capital das Cinzas",
+        "Malenia, a Lâmina de Miquella" => "<strong>Requisito:</strong> Pegar o Medalhão da Árvore Sacra e usar no Grande Elevador de Rold para acessar o Campo de Neve Consagrado.<br/>
+            <strong>Acesso:</strong> Concluir a Prisão Eterna (Evergaol) em Ordina, Cidade Sacramental.",
+        "Radagon da Ordem Áurea/ Fera Prístina" => "<strong>Requisito:</strong> Derrotar o Hoarah Loux.<br/>
+            <strong>Acesso:</strong> Da graça \"Trono Prístino\" siga em direção a árvore e toque na luz."
     );
 
     $chefesSOTE = array(
