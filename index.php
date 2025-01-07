@@ -16,6 +16,7 @@
     <div class="conteiner">
         <div id="jogoBase">
             <h1>Chefes do jogo base</h1>
+            <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaBase">
                 <?php
                     require "Chefes.php";
@@ -36,6 +37,7 @@
 
         <div id="SOTE">
             <h1>Chefes da DLC (Shadow of the Erdtree)</h1>
+            <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaSOTE">
                 <?php
                     foreach($chefesSOTE as $chefe => $informacoes){

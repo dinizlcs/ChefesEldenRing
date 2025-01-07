@@ -14,7 +14,6 @@ body{
 
 h1{
     margin-left: 8px;
-    margin-bottom: 12px;
 }
 
 li{
@@ -29,6 +28,7 @@ li{
 
 #jogoBase, #SOTE{
     display: inline-block;
+    overflow: auto;
     width: 50%;
 
     margin: 12px 0 12px 0;
@@ -36,7 +36,7 @@ li{
 }
 
 #listaBase, #listaSOTE{
-    padding: 4px 0 4px 30px;
+    padding: 4px 0 4px 40px;
 }
 
 .conteiner{
@@ -44,4 +44,9 @@ li{
     min-height: 100vh;
 
     display: flex;
+}
+
+.ajuda-clique{
+    margin: 0 0 12px 12px;
+    font-size: 12pt;
 }

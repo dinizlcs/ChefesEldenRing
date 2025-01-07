@@ -1,7 +1,3 @@
-$('.nomeChefe').hover(function(){
-    $(this).siblings('.informacoes').toggle();
-});
-
 function salvarEstadoChefe(){
     const estados = [];
 
@@ -23,11 +19,37 @@ function carregarEstadoChefe(){
         if(chefe.status === 1){
             item.addClass('chefe-derrotado');
             item.find('.btnConcluir').addClass('concluido');
+            item.find('.informacoes').toggleClass('chefe-derrotado');
         }
     });
 }
 
 $(document).ready(function(){
+    let clicado = null;
+
+    $('.nomeChefe').hover(function(){
+        if(clicado === null){
+            $(this).siblings('.informacoes').toggle();
+        }
+    });
+        
+    // Manter as informações do chefe visíveis ao clicar. Desativa o hover
+    $('.nomeChefe').click(function(){
+        const informacoes = $(this).siblings('.informacoes');
+
+        if(clicado === null || clicado !== $(this).get(0)){
+            if(clicado !== null){
+                $(clicado).siblings('.informacoes').hide();
+            }
+
+            informacoes.show();
+
+            clicado = $(this).get(0);
+        }else{
+            clicado = null;
+        }
+    });
+
     carregarEstadoChefe();
 
     $('.btnConcluir').click(function(){
