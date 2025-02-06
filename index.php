@@ -20,17 +20,7 @@
             <ol id="listaBase">
                 <?php
                     require "Chefes.php";
-
-                    foreach ($chefesBase as $chefe => $informacoes){
-                        if($informacoes === null) $informacoes = "Informações não encontradas.";
-
-                        echo <<<EOD
-                            <li data-nome="$chefe">
-                                <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
-                                <p class="informacoes">$informacoes</p>
-                            </li>
-                        EOD;
-                    }
+                    gerarListaChefes($chefesBase)
                 ?>
             </ol>
         </div>
@@ -40,22 +30,16 @@
             <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaSOTE">
                 <?php
-                    foreach($chefesSOTE as $chefe => $informacoes){
-                        if($informacoes === null) $informacoes = "Informações não encontradas.";
-
-                        echo <<<EOD
-                            <li data-nome="$chefe">
-                                <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
-                                <p class="informacoes">$informacoes</p>
-                            </li>
-                        EOD;
-                    }
+                    gerarListaChefes($chefesSOTE)
                 ?>
             </ol>
         </div>
     </div>
+    <div id="limparStatus">
+        <button id="btnLimparStatus">Limpar Status dos Chefes</button>
+    </div>
 
     <!-- JAVASCRIPT -->
-     <script src="js/funcionalidades.js"></script>
+    <script src="js/funcionalidades.js"></script>
 </body>
 </html>

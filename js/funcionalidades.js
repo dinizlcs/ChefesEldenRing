@@ -50,12 +50,20 @@ $(document).ready(function(){
         }
     });
 
-    carregarEstadoChefe();
-
     $('.btnConcluir').click(function(){
         $(this).toggleClass('concluido');
         $(this).parent().toggleClass('chefe-derrotado');
         $(this).parent().find('.informacoes').toggleClass('chefe-derrotado');
         salvarEstadoChefe();
     });
+
+    $('#btnLimparStatus').click(function(){
+        const confirmacao = confirm("Essa ação irá desmarcar todos os chefes concluídos. Deseja continuar?");
+        if(confirmacao){
+            localStorage.clear();
+            location.reload();
+        }
+    });
+
+    carregarEstadoChefe();
 });

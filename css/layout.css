@@ -39,8 +39,34 @@ li{
     padding: 4px 0 4px 40px;
 }
 
+#limparStatus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#btnLimparStatus{
+    width: fit-content;
+    height: 80%;
+    padding: 4px;
+
+    color: RGB(171, 150, 111);
+    font-weight: bold;
+    background-color: black;
+    border: 2px solid RGB(171, 150, 111);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+#btnLimparStatus:hover{
+    background-color: RGB(40, 40, 40);
+}
+
 .conteiner{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 
     display: flex;

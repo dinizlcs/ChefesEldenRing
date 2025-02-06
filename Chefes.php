@@ -3,7 +3,20 @@
         header("HTTP/1.0 404 Not Found");
         exit;
     }
-    
+
+    function gerarListaChefes($chefes){
+        foreach ($chefes as $chefe => $informacoes){
+            if($informacoes === null) $informacoes = "Informações não encontradas.";
+
+            echo <<<EOD
+                <li data-nome="$chefe">
+                    <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
+                    <p class="informacoes">$informacoes</p>
+                </li>
+            EOD;
+        }
+    }
+
     $chefesBase = array(
         "Godrick, o Enxertado" => "<strong>Localização:</strong> Castelo Tempesvéu, Limgrave.",
         "Rennala, Rainha da Lua Cheia" => "<strong>Localização:</strong> Academia de Raya Lucaria, Liurnia dos Lagos.",
@@ -15,9 +28,10 @@
             &emsp;&emsp;4- Falar com o Seluvis na torre dele e em seguida com a Sellen nas Ruínas do Ponto de Paragem.<br/>
             &emsp;&emsp;5- Falar novamente com o Blaidd no Rio Siofra ativará o festival.<br/>
             &emsp;Elevador Grandioso de Dectus:<br/>
-            &emsp;&emsp;1- Pegar as metades do Medalhão de Dectus. A primeira metade pode ser pega no Fort Haight (sudeste da Floresta Nebulosa  em Limgrave), a segunda metade é
-             encontrada no Fort Faroth (penhascos ao sul de Dragonbarrow).<br/>
+            &emsp;&emsp;1- Pegar as metades do Medalhão de Dectus. A primeira metade pode ser pega no Forte Haight (sudeste da Floresta Nebulosa  em Limgrave), a segunda metade é
+             encontrada no Forte Faroth (penhascos ao sul de Dragonbarrow).<br/>
             &emsp;&emsp;2- Ativar o Elevador Grandioso de Dectus no nordeste de Liurnia.<br/>
+            &emsp;&emsp;3- Ativar qualquer graça do Platô Altus. Há uma graça próxima seguindo a Norte(N) saindo do elevador.
             <strong>Localização:</strong> Castelo da Juba Vermelha, Caelid.",
         "Espírito Ancestral Nobre" => "<strong>Requisito:</strong> Derrotar o Radahn.<br/>
             <strong>Acesso:</strong> Após derrotar o Radahn, uma cratera será formada na Floresta Nebulosa. Descendo a cratera e derrotando o chefe Lágrima Imitadora, você
