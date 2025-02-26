@@ -1,3 +1,7 @@
+<?php
+    require_once "data/DadosChefes.class.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,8 +23,7 @@
             <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaBase">
                 <?php
-                    require "Chefes.php";
-                    gerarListaChefes("chefesBase");
+                    DadosChefes::gerarListaChefes("chefesBase");
                 ?>
             </ol>
         </div>
@@ -30,7 +33,7 @@
             <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaSOTE">
                 <?php
-                    gerarListaChefes("chefesSOTE");
+                    DadosChefes::gerarListaChefes("chefesSOTE");
                 ?>
             </ol>
         </div>
