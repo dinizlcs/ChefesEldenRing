@@ -20,7 +20,7 @@
             <ol id="listaBase">
                 <?php
                     require "Chefes.php";
-                    gerarListaChefes($chefesBase)
+                    gerarListaChefes("chefesBase");
                 ?>
             </ol>
         </div>
@@ -30,7 +30,7 @@
             <p class="ajuda-clique">Clique no nome do chefe para fixar as informações.</p>
             <ol id="listaSOTE">
                 <?php
-                    gerarListaChefes($chefesSOTE)
+                    gerarListaChefes("chefesSOTE");
                 ?>
             </ol>
         </div>

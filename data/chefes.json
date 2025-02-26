@@ -1,0 +1,30 @@
+{
+    "chefesBase":[
+        {
+            "nome":"Godrick, o Enxertado",
+            "localizacao":"Castelo Tempesvéu, Limgrave.",
+            "requisito":"",
+            "acesso":""
+        },
+        {
+            "nome":"Rennala, Rainha da Lua Cheia",
+            "localizacao":"Academia de Raya Lucaria, Liurnia dos Lagos.",
+            "requisito":"**PEGAR CHAVE DRAGAO**",
+            "acesso":""
+        },
+        {
+            "nome":"Flagelo Estelar Radahn",
+            "localizacao":"Castelo da Juba Vermelha, Caelid.",
+            "requisito":"Ativar o festival. Pode ser realizado das seguintes formas:<br/>&emsp;Quest da Ranni:<br/>&emsp;&emsp;1- Falar com a Ranni na Igreja de Elleh, mesmo local do mercante Kalé. (Opcional)<br/>&emsp;&emsp;2- Ir até as Três Irmãs, após derrotar a Loretta, Cavaleira Real na Mansão Caria (ao norte de Liurnia dos Lagos).<br/>&emsp;&emsp;3- Falar com o Blaidd no Rio Siofra (após aceitar servir a ranni e conversar com todos na torre).<br/>&emsp;&emsp;4- Falar com o Seluvis na torre dele e em seguida com a Sellen nas Ruínas do Ponto de Paragem.<br/>&emsp;&emsp;5- Falar novamente com o Blaidd no Rio Siofra ativará o festival.<br/>&emsp;Elevador Grandioso de Dectus:<br/>&emsp;&emsp;1- Pegar as metades do Medalhão de Dectus. A primeira metade pode ser pega no Forte Haight (sudeste da Floresta Nebulosa  em Limgrave), a segunda metade é encontrada no Forte Faroth (penhascos ao sul de Dragonbarrow).<br/>&emsp;&emsp;2- Ativar o Elevador Grandioso de Dectus no nordeste de Liurnia.<br/>&emsp;&emsp;3- Ativar qualquer graça do Platô Altus. Há uma graça próxima seguindo a Norte(N) saindo do elevador.",
+            "acesso":""
+        }
+    ],
+    "chefesSOTE":[
+        {
+            "nome":"Teste chefe SOTE",
+            "localizacao":"Local DLC",
+            "requisito":"Requisito DLC",
+            "acesso":"DLC"
+        }
+    ]
+}

@@ -4,14 +4,38 @@
         exit;
     }
 
-    function gerarListaChefes($chefes){
-        foreach ($chefes as $chefe => $informacoes){
-            if($informacoes === null) $informacoes = "Informações não encontradas.";
+    // Função para gerar a lista de chefes com os arrays no php
+    // function gerarListaChefes($chefes){
+    //     foreach ($chefes as $chefe => $informacoes){
+    //         if($informacoes === null) $informacoes = "Informações não encontradas.";
 
+    //         echo <<<EOD
+    //             <li data-nome="$chefe">
+    //                 <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
+    //                 <p class="informacoes">$informacoes</p>
+    //             </li>
+    //         EOD;
+    //     }
+    // }
+
+    // ***TESTE*** Gerar lista de chefes com o arquivo JSON
+    function gerarListaChefes($defLista){
+        $json = file_get_contents("data/chefes.json");
+        $lstChefes = json_decode($json, true);
+
+        foreach($lstChefes[$defLista] as $chefe){
+            $nomeChefe = $chefe["nome"];
+            // Verifica se a chave existe no array (isset) e se não está vazia (!empty). E então, caso não esteja vazia, adiciona o texto
+            $localizacaoChefe = isset($chefe["localizacao"]) && !empty($chefe["localizacao"]) ? "<strong>Localização: </strong>" . $chefe["localizacao"] . "<br/>" : "";
+            $requisitoChefe = isset($chefe["requisito"]) && !empty($chefe["requisito"]) ? "<strong>Requisito: </strong>" . $chefe["requisito"] . "<br/>" : "";
+            $acessoChefe = isset($chefe["acesso"]) && !empty($chefe["acesso"]) ? "<strong>Acesso: </strong>" . $chefe["acesso"] . "<br/>" : "";
+            
+            $descricao = $localizacaoChefe . $requisitoChefe . $acessoChefe;
+            if($descricao === null) $descricao = "Informações não encontradas.";
             echo <<<EOD
-                <li data-nome="$chefe">
-                    <button class="btnConcluir"></button><span class="nomeChefe">$chefe</span>
-                    <p class="informacoes">$informacoes</p>
+                <li data-nome="$nomeChefe">
+                    <button class="btnConcluir"></button><span class="nomeChefe">$nomeChefe</span>
+                    <p class="informacoes">$descricao</p>
                 </li>
             EOD;
         }
